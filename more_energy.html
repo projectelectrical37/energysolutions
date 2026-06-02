@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>energysolutions</title>
+    <link rel="stylesheet" href="style_index_more.css">
+</head>
+<body>
+    <nav class="box-nav">
+        <div class="logo">
+            <img src="img/LOGO.jpg" alt="">
+        </div>
+        <div class="menu">
+            <ul class="list-menu">
+                <li><a href="index.html" ><div class="active">หน้าหลัก</div></a></li>
+                <li><a href="Build_A.html" ><div>อาคาร A</div></a></li>
+                <li><a href="Build_B.html"><div>อาคาร B</div></a></li>
+                <li><a href="Build_C.html"><div>อาคาร C</div></a></li>
+                <li><a href="Build_D.html"><div>อาคาร D</div></a></li>
+                <li><a href="Build_E.html"><div>อาคาร E</div></a></li>
+                <li><a href="Build_EE.html"><div>อาคารปฏิบัติการ RIE</div></a></li>
+                <li><a href="Build_ME.html"><div>อาคารปฏิบัติการ ME</div></a></li>
+                <li><a href="Build_ARGE.html"><div>อาคารปฏิบัติการ AE</div></a></li>
+                <li><a href="Build_PP.html"><div>อาคารปฏิบัติการ PP</div></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="intro">
+        <div class="container">
+            <h2>Energy</h2>
+
+            <div class="time-picker">
+                <div>
+                    <label for="startTime">ตั้งแต่:</label>
+                    <input type="datetime-local" id="startTime">
+                </div>
+                <div>
+                <label for="endTime">ถึง:</label>
+                    <input type="datetime-local" id="endTime">
+                </div>
+                <button class="btn-update" onclick="updateGrafanaIframes()">อัปเดตข้อมูล</button>
+            </div>
+        </div>
+    </section>
+    <section class="overview">
+        <div class="box-over-energy">
+            <div class="graph1"><iframe id="buildingGraph1" src="https://grafana.energysolutionsystems.com/d-solo/adtn4gx/energy?orgId=1&timezone=Asia%2FBangkok&theme=light&panelId=panel-3&__feature.dashboardScene=true"  frameborder="0"></iframe></div>
+            <div class="graph2"><iframe id="buildingGraph2" src="https://grafana.energysolutionsystems.com/d-solo/adtn4gx/energy?orgId=1&timezone=Asia%2FBangkok&theme=light&panelId=panel-2&__feature.dashboardScene=true"  frameborder="0"></iframe></div>
+            <div class="graph3"><iframe id="buildingGraph3" src="https://grafana.energysolutionsystems.com/d-solo/adtn4gx/energy?orgId=1&timezone=Asia%2FBangkok&theme=light&panelId=panel-7&__feature.dashboardScene=true"  frameborder="0"></iframe></div>
+        </div>
+    </section>
+        
+    <div class="more">
+        <div class="box-MORE">
+            <div class="body">
+                <!-- <div class="more"><a href="more_power_factor.html" class="more-box"><div>Power Factor</div></a></div> -->
+                <div class="more"><a href="more_apparent.html" class="more-box"><div>Apparent Power</div></a></div>
+                <div class="more"><a href="more_active.html" class="more-box"><div>Active Power</div></a></div>
+                <div class="more"><a href="more_reactive.html" class="more-box"><div>Reactive Power</div></a></div>
+                <!-- <div class="more"><a href="more_energy.html" class="more-box"><div>Energy</div></a></div> -->
+                <div class="more"><a href="more_carbon.html" class="more-box"><div>Carbon Creadit</div></a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="more_energy.js"></script>
+    <footer>
+        <div class="footer-con">&#169 POWERED BY ELECTRICAL ENGINEERING PCC</div>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>energysolutions</title>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+    <nav class="box-nav">
+        <div class="logo">
+            <img src="img/LOGO.jpg" alt="">
+        </div>
+        <div class="menu">
+            <ul class="list-menu">
+                <li><a href="index.html" ><div >หน้าหลัก</div></a></li>
+                <li><a href="Build_A.html" ><div >อาคาร A</div></a></li>
+                <li><a href="Build_B.html"><div>อาคาร B</div></a></li>
+                <li><a href="Build_C.html"><div class="active">อาคาร C</div></a></li>
+                <li><a href="Build_D.html"><div>อาคาร D</div></a></li>
+                <li><a href="Build_E.html"><div>อาคาร E</div></a></li>
+                <li><a href="Build_RIE.html"><div>อาคารปฏิบัติการ RIE</div></a></li>
+                <li><a href="Build_ME.html"><div>อาคารปฏิบัติการ ME</div></a></li>
+                <li><a href="Build_AE.html"><div>อาคารปฏิบัติการ AE</div></a></li>
+                <li><a href="Build_PP.html"><div>อาคารปฏิบัติการ PP</div></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="info">
+                <div class="Dashbord">Dashbord</div>
+                <div class="Energy">Energy &</div>
+                <div class="Carbon-h">Carbon Emissions</div>
+                <div class="real-box">
+                    <div class="head-real">Real-time update :</div>
+                    <div class="body-real">
+                        <div class="icon-real">
+                            <img src="https://static.vecteezy.com/system/resources/previews/001/500/503/non_2x/timeout-icon-free-vector.jpg" alt="">
+                        </div>
+                        <div class="ex-box-real">
+                            <div class="every">every 1 minute</div> 
+                            <div class="angle"><img src="img/chevron.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-grafana">
+                    <iframe src="https://grafana.energysolutionsystems.com/d-solo/adm68ns/power-data-realtime?orgId=1&timezone=Asia%2FBangkok&refresh=5s&theme=light&panelId=panel-77&__feature.dashboardScene=true" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="con-pv">
+                <div class="head-pv">ปริมาณก๊าซคาร์บอนไดออกไซด์ที่เกิดจากการใช้ไฟฟ้าเทียบเท่า :</div>
+                <div class="body-pv"><iframe id="buildingC" src="https://grafana.energysolutionsystems.com/d-solo/adzz96j/energy?orgId=1&timezone=browser&refresh=5s&theme=light&panelId=panel-26&__feature.dashboardScene=true"  frameborder="0"></iframe></div>
+            </div>
+            <div class="peakDemand">
+                <div class="head-Peak">Energy from Grid</div>
+                <div class="body-Peak"><iframe src="https://grafana.energysolutionsystems.com/d-solo/adzz96j/energy?orgId=1&timezone=browser&refresh=5s&theme=light&panelId=panel-25&__feature.dashboardScene=true"  frameborder="0"></iframe></div>
+            </div>
+        </div>
+        <div class="monitoring-electrical">
+            <div class="col1">
+                <div class="head">Apparent Power</div>
+                <div class="body-S">
+                    <iframe src="https://grafana.energysolutionsystems.com/d-solo/adm68ns/power-data-realtime?orgId=1&timezone=Asia%2FBangkok&refresh=5s&theme=light&panelId=panel-7&__feature.dashboardScene=true"  frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="head">Active Power</div>
+                <div class="body-P">
+                    <iframe src="https://grafana.energysolutionsystems.com/d-solo/adm68ns/power-data-realtime?orgId=1&timezone=Asia%2FBangkok&refresh=5s&theme=light&panelId=panel-20&__feature.dashboardScene=true"  frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="head">Voltage</div>
+                <div class="body-Q">
+                    <iframe src="https://grafana.energysolutionsystems.com/d-solo/adm68ns/power-data-realtime?orgId=1&timezone=Asia%2FBangkok&refresh=5s&theme=light&panelId=panel-1&__feature.dashboardScene=true"  frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="head">Power Factor</div>
+                <div class="body-PF">
+                    <iframe src="https://grafana.energysolutionsystems.com/d-solo/adm68ns/power-data-realtime?orgId=1&timezone=Asia%2FBangkok&refresh=5s&theme=light&panelId=panel-4&__feature.dashboardScene=true"  frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="col5">
+                <div class="head">Reactive</div>
+                <div class="body-V">
+                    <iframe src="https://grafana.energysolutionsystems.com/d-solo/adm68ns/power-data-realtime?orgId=1&timezone=Asia%2FBangkok&refresh=5s&theme=light&panelId=panel-21&__feature.dashboardScene=true"  frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="col6">
+                <div class="head">Current</div>
+                <div class="body-A">
+                    <iframe src="https://grafana.energysolutionsystems.com/d-solo/adm68ns/power-data-realtime?orgId=1&timezone=Asia%2FBangkok&refresh=5s&theme=light&panelId=panel-3&__feature.dashboardScene=true"  frameborder="0"></iframe>
+                </div>
+            </div><div class="col7">
+                <div class="head">Graph Active Power Total</div>
+                <div class="body-A">
+                    <iframe src="https://grafana.energysolutionsystems.com/d-solo/adm68ns/power-data-realtime?orgId=1&timezone=Asia%2FBangkok&refresh=5s&theme=light&panelId=panel-8&__feature.dashboardScene=true"  frameborder="0"></iframe>
+            </div>
+        </div>
+        <script src="ef_real.js"></script>
+    </section>
+</body>
+<footer>
+    <div class="footer-con">&#169 POWERED BY ELECTRICAL ENGINEERING PCC</div>
+</footer>
+</html>
